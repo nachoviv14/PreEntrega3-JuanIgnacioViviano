@@ -1,0 +1,287 @@
+$color-fondo: #f8f9fa;
+$color-texto: #333;
+$color-enlace: #007bff;
+$color-enlace-hover: #0056b3;
+$hover-scale: 1.1; 
+$color-fondo-body:#f1f1f1 ;
+$tamano-letras: 20px;
+$fuente: 'Roboto', sans-serif; 
+$color-primario: #007bff;
+$color-secundario: #6c757d;
+$color-botones: #28a745;
+
+
+
+
+body {
+    background-color: $color-fondo-body;
+}
+
+
+  
+.navbar {
+  background-color: $color-fondo;
+  padding: 10px 0;
+  transition: transform 0.3s ease-in-out; 
+
+  &:hover {
+    transform: scale($hover-scale); 
+  }
+
+  .navbar-brand {
+    img {
+      max-height: 150px; // Ajusta la altura del logotipo
+      margin: 0 auto; // Centra el logotipo horizontalmente
+    }
+  }
+
+  .nav-link {
+    color: $color-texto;
+    margin-right: 10px;
+    margin-left: 10px;
+
+    &:hover {
+      color: $color-enlace-hover;
+    }
+  }
+
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        &.active {
+          color: $color-enlace;
+        }
+      }
+    }
+
+    .ml-auto {
+      .nav-link {
+        margin-right: 0; // Elimina el margen derecho en los elementos de navegación de la derecha
+        font-size: $tamano-letras;
+    }
+    }
+  }
+}
+.navbar {
+    font-family: $fuente;
+}
+
+.inicio {
+    text-align: center;
+}
+  
+.titulo-animado {
+    font-size: 72px; /* Tamaño del título */
+    animation: caida-rebote 1s ease; /* Nombre de la animación y duración */
+    color: #2c678d;
+}
+  
+@keyframes caida-rebote {
+    0% {
+      transform: translateY(-1000%); /* Empieza muy arriba de la pantalla */
+      animation-timing-function: ease-in; /* Inicia con aceleración */
+    }
+    60% {
+      transform: translateY(100%); /* Rebota hacia abajo */
+      animation-timing-function: ease-out; /* Termina con desaceleración */
+    }
+    80% {
+      transform: translateY(-30%); /* Rebota hacia arriba */
+      animation-timing-function: ease-in; /* Inicia con aceleración */
+    }
+    100% {
+      transform: translateY(0); /* Termina en su posición original */
+    }
+}
+.inicio .img{
+    width: 200px; /* Tamaño del logo */
+    margin-top: 20px; /* Espaciado entre el título y el logo */
+}
+
+
+.footer {
+    background-color: #343a40; 
+    color: #fff; 
+    padding: 1.5rem; 
+    text-align: center; 
+  
+    
+    ul {
+      list-style-type: none; 
+      padding: 0; 
+      margin-bottom: 1rem; 
+  
+      
+      li {
+        
+        &:before {
+          
+          content: '\f0e1'; // Código del icono de Instagram
+          margin-right: 0.5rem; // Espaciado derecho entre el icono y el enlace
+        }
+  
+        // Estilos para el enlace
+        a {
+          color: #fff; // Color del enlace
+          text-decoration: none; // Quitar la subrayado del enlace
+  
+          // Añadir estilos al pasar el mouse por encima del enlace
+          &:hover {
+            text-decoration: underline; // Subrayar el enlace al pasar el mouse por encima
+          }
+        }
+      }
+    }
+  
+    // Estilos para la información de horario de atención y contacto
+    .info {
+      margin-bottom: 1rem; // Espaciado inferior de la información
+      font-size: 0.9rem; // Tamaño de fuente de la información
+  
+      // Estilos para los íconos de teléfono y dirección
+      i {
+        
+        margin-right: 0.5rem; // Espaciado derecho entre el icono y el texto
+      }
+    }
+  
+    // Estilos para el texto de derechos de autor
+    .copyright {
+      font-size: 0.9rem; // Tamaño de fuente del texto de derechos de autor
+    }
+}
+
+.txtALA{
+    text-align: center; // Alinear el texto al centro
+  margin-top: 100px; // Espaciado superior del texto
+
+}
+
+
+
+  
+  
+.consult-link {
+    color: #007bff; /* Color de letra azul/celeste */
+    cursor: pointer;
+    text-decoration: underline;
+}
+  
+
+
+
+
+
+
+
+
+.formulario {
+    margin: 30px;
+    padding: 20px;
+    background-color: $color-fondo;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.formulario h1 {
+    color: $color-primario;
+    font-family: $fuente;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.formulario .form-group label {
+    color: $color-secundario;
+    font-family: $fuente;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.formulario .form-control {
+    border-color: $color-secundario;
+}
+
+.formulario .btn-enviar {
+    background-color: $color-botones;
+    color: #fff;
+    border-color: $color-botones;
+    font-family: $fuente;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.formulario .btn-enviar:hover {
+    background-color: darken($color-botones, 10%);
+    border-color: darken($color-botones, 10%);
+}
+
+.footer {
+    margin-top: 50px;
+}
+  
+  
+.pCV{
+    margin-top: 20px; /* Añade un margen superior de 20px */
+    font-family: $fuente;
+    font-size: 14px;
+    color: $color-secundario;
+    text-align: center;
+
+    p {
+        transition: all 0.3s ease; /* Transición de 0.3 segundos para suavizar el efecto */
+        cursor: pointer;
+
+        strong {
+            font-weight: bold;
+        }
+
+        a {
+            color: $color-enlace;
+            text-decoration: none;
+            transition: color 0.3s ease; /* Transición de color de 0.3 segundos */
+        }
+
+        &:hover {
+            font-size: 16px; /* Aumenta el tamaño del texto al pasar el cursor */
+            color: $color-enlace; /* Cambia el color del texto al pasar el cursor */
+
+            a {
+                color: darken($color-enlace, 10%); /* Cambia el color del enlace al pasar el cursor */
+            }
+        }
+    }
+}
+
+.profesor-card {
+    padding: 1rem;
+    text-align: center;
+    background-color: #f8f9fa;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+  
+    h4 {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+  
+    p {
+      margin-bottom: 0.2rem;
+    }
+    &:hover {
+        // Cambiar tamaño y fondo al pasar el cursor
+        transform: scale(1.05);
+        background-color: #e9ecef;
+    }
+
+}
+
+  

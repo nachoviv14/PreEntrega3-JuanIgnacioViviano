@@ -1,0 +1,213 @@
+@charset "UTF-8";
+body {
+  background-color: #f1f1f1;
+}
+
+.navbar {
+  background-color: #f8f9fa;
+  padding: 10px 0;
+  transition: transform 0.3s ease-in-out;
+}
+.navbar:hover {
+  transform: scale(1.1);
+}
+.navbar .navbar-brand img {
+  max-height: 150px;
+  margin: 0 auto;
+}
+.navbar .nav-link {
+  color: #333;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.navbar .nav-link:hover {
+  color: #0056b3;
+}
+.navbar .navbar-nav .nav-item .nav-link.active {
+  color: #007bff;
+}
+.navbar .navbar-nav .ml-auto .nav-link {
+  margin-right: 0;
+  font-size: 20px;
+}
+
+.navbar {
+  font-family: "Roboto", sans-serif;
+}
+
+.inicio {
+  text-align: center;
+}
+
+.titulo-animado {
+  font-size: 72px; /* Tamaño del título */
+  animation: caida-rebote 1s ease; /* Nombre de la animación y duración */
+  color: #2c678d;
+}
+
+@keyframes caida-rebote {
+  0% {
+    transform: translateY(-1000%); /* Empieza muy arriba de la pantalla */
+    animation-timing-function: ease-in; /* Inicia con aceleración */
+  }
+  60% {
+    transform: translateY(100%); /* Rebota hacia abajo */
+    animation-timing-function: ease-out; /* Termina con desaceleración */
+  }
+  80% {
+    transform: translateY(-30%); /* Rebota hacia arriba */
+    animation-timing-function: ease-in; /* Inicia con aceleración */
+  }
+  100% {
+    transform: translateY(0); /* Termina en su posición original */
+  }
+}
+.inicio .img {
+  width: 200px; /* Tamaño del logo */
+  margin-top: 20px; /* Espaciado entre el título y el logo */
+}
+
+.footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+}
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+.footer ul li:before {
+  content: "\f0e1";
+  margin-right: 0.5rem;
+}
+.footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+.footer .info {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+.footer .info i {
+  margin-right: 0.5rem;
+}
+.footer .copyright {
+  font-size: 0.9rem;
+}
+
+.txtALA {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.consult-link {
+  color: #007bff; /* Color de letra azul/celeste */
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.formulario {
+  margin: 30px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.formulario h1 {
+  color: #007bff;
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.formulario .form-group label {
+  color: #6c757d;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.formulario .form-control {
+  border-color: #6c757d;
+}
+
+.formulario .btn-enviar {
+  background-color: #28a745;
+  color: #fff;
+  border-color: #28a745;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.formulario .btn-enviar:hover {
+  background-color: #1e7e34;
+  border-color: #1e7e34;
+}
+
+.footer {
+  margin-top: 50px;
+}
+
+.pCV {
+  margin-top: 20px; /* Añade un margen superior de 20px */
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #6c757d;
+  text-align: center;
+}
+.pCV p {
+  transition: all 0.3s ease; /* Transición de 0.3 segundos para suavizar el efecto */
+  cursor: pointer;
+}
+.pCV p strong {
+  font-weight: bold;
+}
+.pCV p a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Transición de color de 0.3 segundos */
+}
+.pCV p:hover {
+  font-size: 16px; /* Aumenta el tamaño del texto al pasar el cursor */
+  color: #007bff; /* Cambia el color del texto al pasar el cursor */
+}
+.pCV p:hover a {
+  color: #0062cc; /* Cambia el color del enlace al pasar el cursor */
+}
+
+.profesor-card {
+  padding: 1rem;
+  text-align: center;
+  background-color: #f8f9fa;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+.profesor-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+.profesor-card h4 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.profesor-card p {
+  margin-bottom: 0.2rem;
+}
+.profesor-card:hover {
+  transform: scale(1.05);
+  background-color: #e9ecef;
+}
+
+/*# sourceMappingURL=estilos.css.map */
